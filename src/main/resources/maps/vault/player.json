@@ -1,0 +1,65 @@
+[
+  {
+    "id": "FighterEren",
+    "name": "Eren",
+    "class": "Fighter",
+    "stats": {
+      "strength": 15,
+      "intelligence": 5,
+      "agility": 10,
+      "luck": 5,
+      "minStatLimit": 0,
+      "maxStatLimit": 999
+    },
+    "items": [
+      "ShortSword",
+      "StoutShield"
+    ],
+    "skills": [
+      "SwiftStrike",
+      "WarCry"
+    ]
+  },
+  {
+    "id": "MageHarry",
+    "name": "Harry",
+    "class": "WarMage",
+    "stats": {
+      "strength": 8,
+      "intelligence": 15,
+      "agility": 7,
+      "luck": 5,
+      "minStatLimit": 0,
+      "maxStatLimit": 999
+    },
+    "items": [
+      "MagicWand",
+      "CloakOfWisdom"
+    ],
+    "skills": [
+      "FireBall",
+      "MeteorStrike"
+    ]
+  },
+  {
+    "id": "HunterVlad",
+    "name": "Vlad",
+    "class": "Hunter",
+    "stats": {
+      "strength": 8,
+      "intelligence": 7,
+      "agility": 15,
+      "luck": 5,
+      "minStatLimit": 0,
+      "maxStatLimit": 999
+    },
+    "items": [
+      "LongBow",
+      "PlateMail"
+    ],
+    "skills": [
+      "PowerShot",
+      "RainOfArrows"
+    ]
+  }
+]

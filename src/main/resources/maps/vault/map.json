@@ -4,8 +4,8 @@
   "outroText": "Thanks For playing!",
   "map": [
     {
-      "roomId": "StakePit",
-      "roomAttributes": [
+      "id": "StakePit",
+      "attributes": [
         "trap"
       ],
       "displayName": "Stake Pit",
@@ -21,8 +21,8 @@
       ]
     },
     {
-      "roomId": "Hall1",
-      "roomAttributes": [
+      "id": "Hall1",
+      "attributes": [
         "respawn"
       ],
       "displayName": "Hall 1",
@@ -50,8 +50,8 @@
       ]
     },
     {
-      "roomId": "DungeonCell",
-      "roomAttributes": [
+      "id": "DungeonCell",
+      "attributes": [
         "start"
       ],
       "displayName": "Dungeon cell",
@@ -71,8 +71,8 @@
       ]
     },
     {
-      "roomId": "Hall2",
-      "roomAttributes": [
+      "id": "Hall2",
+      "attributes": [
         "common"
       ],
       "displayName": "Hall 2",
@@ -98,8 +98,8 @@
       ]
     },
     {
-      "roomId": "Exit",
-      "roomAttributes": [
+      "id": "Exit",
+      "attributes": [
         "exit"
       ],
       "displayName": "Exit",
@@ -115,8 +115,8 @@
       ]
     },
     {
-      "roomId": "MechanicalsDoorRoom",
-      "roomAttributes": [
+      "id": "MechanicalsDoorRoom",
+      "attributes": [
         "puzzle"
       ],
       "displayName": "Mechanical's door room",
@@ -140,8 +140,8 @@
       ]
     },
     {
-      "roomId": "GuardsRoom",
-      "roomAttributes": [
+      "id": "GuardsRoom",
+      "attributes": [
         "common"
       ],
       "displayName": "Guard's Room",
