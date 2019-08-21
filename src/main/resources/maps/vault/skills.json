@@ -1,0 +1,83 @@
+[
+  {
+    "id": "SwiftStrike",
+    "displayName": "Swift Strike",
+    "description": "A basic attack but swift as wind",
+    "attributes": [
+      "PhysicalDamage"
+    ],
+    "value": 10,
+    "multiplier": 0.25,
+    "manaCost": 5
+  },
+  {
+    "id": "WarCry",
+    "displayName": "War Cry",
+    "description": "Fortification cry",
+    "attributes": [
+      "Buff"
+    ],
+    "buffs": [
+      "MinorArmor"
+    ],
+    "manaCost": 5
+  },
+  {
+    "id": "FireBall",
+    "displayName": "Fire Ball",
+    "description": "A basic fire attributed attack",
+    "attributes": [
+      "MagicalDamage"
+    ],
+    "value": 10,
+    "multiplier": 0.25,
+    "manaCost": 5
+  },
+  {
+    "id": "MeteorStrike",
+    "displayName": "Meteor Strike",
+    "description": "Call upon the meteor from the skies",
+    "attributes": [
+      "MagicalDamage"
+    ],
+    "value": 20,
+    "multiplier": 0.75,
+    "manaCost": 15
+  },
+  {
+    "id": "PowerShot",
+    "displayName": "PowerShot",
+    "description": "A powerful ranged shot",
+    "attributes": [
+      "PhysicalDamage"
+    ],
+    "value": 10,
+    "debuffs": [
+      "MinorPosion"
+    ],
+    "manaCost": 5
+  },
+  {
+    "id": "RainOfArrows",
+    "displayName": "Rain of Arrows",
+    "description": "Call upon the rain of arrows from the skies",
+    "attributes": [
+      "PhysicalDamage"
+    ],
+    "value": 20,
+    "multiplier": 0.75,
+    "manaCost": 15
+  },
+  {
+    "id": "PoisonBite",
+    "displayName": "Poison Bite",
+    "description": "A quick bite that'll inject poison to the blood stream",
+    "attributes": [
+      "PhysicalDamage"
+    ],
+    "value": 5,
+    "debuffs": [
+      "MinorPosion"
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "GiantRat",
+    "displayName": "Giant Rat",
+    "description": "A giant sewer rat who loves to eat cheesy heroes",
+    "stats": {
+      "strength": 10,
+      "intelligence": 1,
+      "agility": 5,
+      "luck": 1
+    },
+    "skills": ["PoisonBite"]
+  }
+]
