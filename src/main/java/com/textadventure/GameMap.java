@@ -3,6 +3,7 @@ package com.textadventure;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,9 +11,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
+@Slf4j
 public @Data class GameMap {
 
-	private static final Logger log = LoggerFactory.getLogger(GameMap.class);
 	private int commanderCounter;
 	private boolean gameOver;
 	private final String INTROTEXT = "Welcome to the game!";
