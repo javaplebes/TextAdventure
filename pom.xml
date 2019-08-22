@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <maven-compiler.version>3.8.1</maven-compiler.version>
+        <maven-compiler.version>3.8.0</maven-compiler.version>
         <maven-compiler-plugin.source>12</maven-compiler-plugin.source>
         <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
