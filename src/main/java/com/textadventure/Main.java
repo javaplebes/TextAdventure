@@ -1,14 +1,20 @@
 package com.textadventure;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 
 public class Main {
+
+    private static final Logger log = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) {
-        System.out.println("Hi there! Let's rock this");
+        log.info("Hi there! Let's rock this");
         String input = " w walk s North";
-        Lexer lexer = new Lexer();
-        ArrayList<Token> tokens = lexer.lex(input);
+
+        ArrayList<Token> tokens = Lexer.lex(input);
         for (Token token : tokens)
-          System.out.println(token);
+          log.info(token.toString());
     }
 }

@@ -18,13 +18,13 @@ public class Lexer {
 
 	public static ArrayList<Token> lex(String input) {
 		// The tokens to return
-		ArrayList<Token> tokens = new ArrayList<Token>();
+		ArrayList<Token> tokens = new ArrayList<>();
 
 		// Lexer logic begins here
 		StringBuffer tokenPatternsBuffer = new StringBuffer();
 		for (TokenType tokenType : TokenType.values())
 			tokenPatternsBuffer.append(String.format("|(?<%s>%s)", tokenType.name(), tokenType.pattern));
-		Pattern tokenPatterns = Pattern.compile(new String(tokenPatternsBuffer.substring(1)));
+		Pattern tokenPatterns = Pattern.compile(tokenPatternsBuffer.substring(1));
 
 		// Begin matching tokens
 		Matcher matcher = tokenPatterns.matcher(input);
