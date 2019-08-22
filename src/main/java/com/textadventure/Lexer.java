@@ -7,8 +7,7 @@ import java.util.regex.Pattern;
 public class Lexer {
 
 	public enum TokenType {
-		MOVEMENT(" w | a | s | d "), WALK("walk"), RUN("run"), DIRECTION("North|South|East|West"),
-		WHITESPACE("[ \t\f\r\n]+");
+		MOVEMENT("W|A|S|D"), WALK("walk"), RUN("run"), DIRECTION("North|South|East|West");
 		public final String pattern;
 
 		private TokenType(String pattern) {
@@ -26,8 +25,11 @@ public class Lexer {
 			tokenPatternsBuffer.append(String.format("|(?<%s>%s)", tokenType.name(), tokenType.pattern));
 		Pattern tokenPatterns = Pattern.compile(new String(tokenPatternsBuffer.substring(1)));
 
-		// Begin matching tokens
-		Matcher matcher = tokenPatterns.matcher(input);
+		// The user's input is splited after " "
+		for (String word : input.split(" ")) {
+		
+			// Begin matching tokens
+		Matcher matcher = tokenPatterns.matcher(word);
 		while (matcher.find()) {
 			if (matcher.group(TokenType.MOVEMENT.name()) != null) {
 				tokens.add(new Token(TokenType.MOVEMENT, matcher.group(TokenType.MOVEMENT.name())));
@@ -41,10 +43,11 @@ public class Lexer {
 			} else if (matcher.group(TokenType.DIRECTION.name()) != null) {
 				tokens.add(new Token(TokenType.DIRECTION, matcher.group(TokenType.DIRECTION.name())));
 				continue;
-			} else if (matcher.group(TokenType.WHITESPACE.name()) != null)
-				continue;
+			} 
+			}
 		}
 
 		return tokens;
 	}
+	
 }
