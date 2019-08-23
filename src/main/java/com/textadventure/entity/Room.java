@@ -28,6 +28,6 @@ public class Room extends BaseEntity {
 	private List<Item> items;
 	private List<Interactable> interactables;
 	private List<Enemy> enemies;
-	private List<Player> players;
+	private List<Hero> heroes;
 	private List<Exit> exits;
 }

@@ -17,7 +17,7 @@ public @Data class GameMap {
 	private final String INTROTEXT = "Welcome to the game!";
 	private final String OUTROTEXT = "Thanks For playing!";
 	private final String FILENAME = "path to Dungeon.json";
-	private Player player;
+	private Hero hero;
 	public Room[] rooms;
 
 	public GameMap(int numberOfTerritorys) {
@@ -26,7 +26,7 @@ public @Data class GameMap {
 			// TODO: config for this filename?
 			Map<String, Object> map = mapper.readValue(new File(FILENAME), new TypeReference<Map<String, Object>>(){});
 			/*	rooms <= map.get("map")
-			 * 	player <= map.get("player")
+			 * 	hero <= map.get("hero")
 			*/
 		}catch (IOException error) {
 			log.error("Problem reading file {}: ",FILENAME, error);
