@@ -3,13 +3,13 @@
 deploy_to_env() {
   if [ -z "$1" ] || [ "$1" = "DEV" ]; then
     echo "Deploying to DEV environment."
-    ssh "${PROJ_USER}"@"${DEV_SERVER}" "bash -s" < deploy-dev.sh
+    ssh "${PROJ_USER}@${DEV_SERVER}" "bash -s" < deploy-dev.sh
   elif [ "$1" = "PREPROD" ]; then
     echo "Deploying to PREPROD environment."
-    ssh "${PROJ_USER}"@"${PREPROD_SERVER}" "bash -s" < deploy-preprod.sh
+    ssh "${PROJ_USER}@${PREPROD_SERVER}" "bash -s" < deploy-preprod.sh
   elif [ "$1" = "PROD" ]; then
     echo "Deploying to PROD environment."
-    ssh "${PROJ_USER}"@"${PROD_SERVER}" "bash -s" < deploy-prod.sh
+    ssh "${PROJ_USER}@${PROD_SERVER}" "bash -s" < deploy-prod.sh
   else
     echo "Unknown environment."
     return 1
