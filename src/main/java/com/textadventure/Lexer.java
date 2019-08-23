@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class Lexer {
 
 	public enum TokenType {
-		MOVEMENT("W|A|S|D"), WALK("walk"), RUN("run"), DIRECTION("North|South|East|West");
+		WALK("walk"), RUN("run"), DIRECTION("North|South|East|West");
 		public final String pattern;
 
 		private TokenType(String pattern) {
@@ -23,18 +23,13 @@ public class Lexer {
 		StringBuffer tokenPatternsBuffer = new StringBuffer();
 		for (TokenType tokenType : TokenType.values())
 			tokenPatternsBuffer.append(String.format("|(?<%s>%s)", tokenType.name(), tokenType.pattern));
-		Pattern tokenPatterns = Pattern.compile(new String(tokenPatternsBuffer.substring(1)));
-
-		// The user's input is splited after " "
-		for (String word : input.split(" ")) {
+		Pattern tokenPatterns = Pattern.compile(tokenPatternsBuffer.substring(1));
 		
-			// Begin matching tokens
+		for(String word: input.split(" ")) {
+		// Begin matching tokens
 		Matcher matcher = tokenPatterns.matcher(word);
 		while (matcher.find()) {
-			if (matcher.group(TokenType.MOVEMENT.name()) != null) {
-				tokens.add(new Token(TokenType.MOVEMENT, matcher.group(TokenType.MOVEMENT.name())));
-				continue;
-			} else if (matcher.group(TokenType.WALK.name()) != null) {
+			 if (matcher.group(TokenType.WALK.name()) != null) {
 				tokens.add(new Token(TokenType.WALK, matcher.group(TokenType.WALK.name())));
 				continue;
 			} else if (matcher.group(TokenType.RUN.name()) != null) {
@@ -43,11 +38,9 @@ public class Lexer {
 			} else if (matcher.group(TokenType.DIRECTION.name()) != null) {
 				tokens.add(new Token(TokenType.DIRECTION, matcher.group(TokenType.DIRECTION.name())));
 				continue;
-			} 
 			}
 		}
-
+		}
 		return tokens;
 	}
-	
 }

@@ -1,38 +1,35 @@
 package com.textadventure;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
-import org.junit.Assert;
-import org.junit.Test;
+public class LexerTest {
 
-public class MainTest {
-    @Test
-    public void testMain() {
-        Assert.assertEquals(true, true);
-    }
-    @Test
-    public void testOutputToken() {
-    	String inputTest = " W S North run walk D ";
-    	Lexer lexer = new Lexer();
-    	ArrayList<Token> tokens = lexer.lex(inputTest);
-    	String output = "";
-    	for (Token token : tokens)
-    		output += token.type + " ";
-        assertTrue(output.contains("MOVEMENT"));
-        assertTrue(output.contains("DIRECTION"));
-        assertTrue(output.contains("WALK"));
-        assertTrue(output.contains("RUN"));
-    }
-    @Test
-    public void testOutputNumberOfWords() {
-    	String inputTest = " W S North run walk D ";
-    	Lexer lexer = new Lexer();
-    	ArrayList<Token> tokens = lexer.lex(inputTest);
-    	assertEquals(6, tokens.size());
-    }
-    
+	@Test
+	void testOutputToken() {
+		String inputTest = "North run walk";
+		ArrayList<Token> tokens = Lexer.lex(inputTest);
+		String output = "";
+		for (Token token : tokens)
+			output += token.type + " ";
+		assertTrue(output.contains("DIRECTION"));
+		assertTrue(output.contains("WALK"));
+		assertTrue(output.contains("RUN"));
+	}
+
+	@Test
+	public void testOutputNumberOfWords() {
+		String inputTest = "North run walk";
+		ArrayList<Token> tokens = Lexer.lex(inputTest);
+		int numberOfWords = 1;
+		for (Token token : tokens)
+			numberOfWords++;
+
+		assertEquals(3, tokens.size());
+	}
 }
