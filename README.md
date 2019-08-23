@@ -8,6 +8,12 @@ team environment.
 
 ## Getting Started
 
+### Running the game
+
+Run class 'Main' (com.textadventure.Main) with no arguments.
+
+### Writing the game
+
 To get started developing on this locally, follow these steps.
 
  #### Cloning via SSH
