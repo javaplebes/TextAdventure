@@ -7,44 +7,39 @@ import java.util.regex.Pattern;
 public class Lexer {
 
 	public enum TokenType {
-		MOVEMENT(" w | a | s | d "), WALK("walk"), RUN("run"), DIRECTION("North|South|East|West"),
-		WHITESPACE("[ \t\f\r\n]+");
+		WALK("walk"), RUN("run"), DIRECTION("North|South|East|West");
 		public final String pattern;
 
-		private TokenType(String pattern) {
+		TokenType(String pattern) {
 			this.pattern = pattern;
 		}
 	}
 
 	public static ArrayList<Token> lex(String input) {
 		// The tokens to return
-		ArrayList<Token> tokens = new ArrayList<>();
+		ArrayList<Token> tokens = new ArrayList<Token>();
 
 		// Lexer logic begins here
-		StringBuffer tokenPatternsBuffer = new StringBuffer();
+		StringBuilder tokenPatternsBuilder = new StringBuilder();
 		for (TokenType tokenType : TokenType.values())
-			tokenPatternsBuffer.append(String.format("|(?<%s>%s)", tokenType.name(), tokenType.pattern));
-		Pattern tokenPatterns = Pattern.compile(tokenPatternsBuffer.substring(1));
+			tokenPatternsBuilder.append(String.format("|(?<%s>%s)", tokenType.name(), tokenType.pattern));
+		Pattern tokenPatterns = Pattern.compile(tokenPatternsBuilder.substring(1));
 
-		// Begin matching tokens
-		Matcher matcher = tokenPatterns.matcher(input);
-		while (matcher.find()) {
-			if (matcher.group(TokenType.MOVEMENT.name()) != null) {
-				tokens.add(new Token(TokenType.MOVEMENT, matcher.group(TokenType.MOVEMENT.name())));
-				continue;
-			} else if (matcher.group(TokenType.WALK.name()) != null) {
-				tokens.add(new Token(TokenType.WALK, matcher.group(TokenType.WALK.name())));
-				continue;
-			} else if (matcher.group(TokenType.RUN.name()) != null) {
-				tokens.add(new Token(TokenType.RUN, matcher.group(TokenType.RUN.name())));
-				continue;
-			} else if (matcher.group(TokenType.DIRECTION.name()) != null) {
-				tokens.add(new Token(TokenType.DIRECTION, matcher.group(TokenType.DIRECTION.name())));
-				continue;
-			} else if (matcher.group(TokenType.WHITESPACE.name()) != null)
-				continue;
+		for (String word : input.split(" ")) {
+			// Begin matching tokens
+			Matcher matcher = tokenPatterns.matcher(word);
+			while (matcher.find()) {
+				if (matcher.group(TokenType.WALK.name()) != null) {
+					tokens.add(new Token(TokenType.WALK, matcher.group(TokenType.WALK.name())));
+					continue;
+				} else if (matcher.group(TokenType.RUN.name()) != null) {
+					tokens.add(new Token(TokenType.RUN, matcher.group(TokenType.RUN.name())));
+					continue;
+				} else if (matcher.group(TokenType.DIRECTION.name()) != null) {
+					tokens.add(new Token(TokenType.DIRECTION, matcher.group(TokenType.DIRECTION.name())));
+				}
+			}
 		}
-
 		return tokens;
 	}
 }
