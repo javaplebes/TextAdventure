@@ -5,7 +5,7 @@
 # so the DEV server won't have to rebuild an already built project.
 #
 
-ORG_PATH="~/JavaPlebes"
+ORG_PATH="$HOME/JavaPlebes"
 PROJ_DIR="/TextAdventure"
 GIT_URL="git@github.com:javaplebes/TextAdventure.git"
 
@@ -14,14 +14,14 @@ if [ ! -d "$ORG_PATH" ]; then
   mkdir ORG_PATH
 fi
 
-cd $ORG_PATH
+cd "${ORG_PATH}" || exit
 
 if [ -! -d "$PROJ_DIR" ]; then
   echo "Project directory does not exist. Cloning latest from GitHub..."
   git clone $GIT_URL $PROJ_DIR
 fi
 
-cd $PROJ_DIR
+cd $PROJ_DIR || exit
 
 echo "Pulling the latest master branch..."
 git pull origin master
