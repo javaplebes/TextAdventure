@@ -1,16 +1,15 @@
-package com.textadventure;
+package com.textadventure.entity;
 
 import com.textadventure.Lexer.TokenType;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
+@Data
+@AllArgsConstructor
 public class Token {
 	
-	public TokenType type;
-    public String data;
-
-    public Token(TokenType type, String data) {
-      this.type = type;
-      this.data = data;
-    }
+	private TokenType type;
+    private String data;
 
     @Override
     public String toString() {

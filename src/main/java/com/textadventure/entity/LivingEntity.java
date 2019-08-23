@@ -1,12 +1,15 @@
-package com.textadventure;
+package com.textadventure.entity;
+
+import com.textadventure.IGameObject;
 import lombok.Data;
 
-public @Data class LivingEntity implements IGameObject{
+@Data
+public class LivingEntity extends BaseEntity implements IGameObject {
 
 	private float health;
 	private float strength;
 	private float defence;
-	private Territory location;
+	private Room location;
 	
 	public void input() {
 		

@@ -1,5 +1,7 @@
 package com.textadventure;
 
+import com.textadventure.entity.Token;
+
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

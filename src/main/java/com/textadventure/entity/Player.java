@@ -1,9 +1,11 @@
-package com.textadventure;
+package com.textadventure.entity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-
-public @Data class Player extends LivingEntity{
-	private Item inventory[];
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class Player extends LivingEntity {
+	private Item[] inventory;
 	private int inventoryCount;
 	private int inventoryLength;
 	
