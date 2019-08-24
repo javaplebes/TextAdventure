@@ -1,20 +1,27 @@
-[
-  {
-    "id": "ShortSword"
+{
+  "ShortSword": {
+    "id": "ShortSword",
+    "attackDamage": 20
   },
-  {
-    "id": "StoutShield"
+  "StoutShield": {
+    "id": "StoutShield",
+    "health": 10,
+    "armor": 1
   },
-  {
-    "id": "MagicWand"
+  "MagicWand": {
+    "id": "MagicWand",
+    "attackDamage": 20
   },
-  {
-    "id": "CloakOfWisdom"
+  "CloakOfWisdom": {
+    "id": "CloakOfWisdom",
+    "magicalDamageReduction": 5
   },
-  {
-    "id": "LongBow"
+  "LongBow": {
+    "id": "LongBow",
+    "attackDamage": 20
   },
-  {
-    "id": "PlateMail"
+  "PlateMail": {
+    "id": "PlateMail",
+    "armor": 2
   }
-]
+}

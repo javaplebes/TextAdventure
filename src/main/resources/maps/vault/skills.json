@@ -1,5 +1,5 @@
-[
-  {
+{
+  "SwiftStrike": {
     "id": "SwiftStrike",
     "displayName": "Swift Strike",
     "description": "A basic attack but swift as wind",
@@ -10,7 +10,7 @@
     "multiplier": 0.25,
     "manaCost": 5
   },
-  {
+  "WarCry": {
     "id": "WarCry",
     "displayName": "War Cry",
     "description": "Fortification cry",
@@ -22,7 +22,7 @@
     ],
     "manaCost": 5
   },
-  {
+  "FireBall": {
     "id": "FireBall",
     "displayName": "Fire Ball",
     "description": "A basic fire attributed attack",
@@ -33,7 +33,7 @@
     "multiplier": 0.25,
     "manaCost": 5
   },
-  {
+  "MeteorStrike": {
     "id": "MeteorStrike",
     "displayName": "Meteor Strike",
     "description": "Call upon the meteor from the skies",
@@ -44,7 +44,7 @@
     "multiplier": 0.75,
     "manaCost": 15
   },
-  {
+  "PowerShot": {
     "id": "PowerShot",
     "displayName": "PowerShot",
     "description": "A powerful ranged shot",
@@ -57,7 +57,7 @@
     ],
     "manaCost": 5
   },
-  {
+  "RainOfArrows": {
     "id": "RainOfArrows",
     "displayName": "Rain of Arrows",
     "description": "Call upon the rain of arrows from the skies",
@@ -68,7 +68,7 @@
     "multiplier": 0.75,
     "manaCost": 15
   },
-  {
+  "PoisonBite": {
     "id": "PoisonBite",
     "displayName": "Poison Bite",
     "description": "A quick bite that'll inject poison to the blood stream",
@@ -80,4 +80,4 @@
       "MinorPosion"
     ]
   }
-]
+}

@@ -1,5 +1,5 @@
-[
-  {
+{
+  "FighterEren": {
     "id": "FighterEren",
     "displayName": "Eren",
     "description": "A honest warrior from the eastern lands set out in search of the great treasure in hopes of saving his town from famine",
@@ -19,7 +19,7 @@
       "WarCry"
     ]
   },
-  {
+  "MageHarry": {
     "id": "MageHarry",
     "displayName": "Harry",
     "description": "A clever boy from the Wilburn Magic Academy in search of greater knowledge",
@@ -39,7 +39,7 @@
       "MeteorStrike"
     ]
   },
-  {
+  "HunterValentine": {
     "id": "HunterValentine",
     "displayName": "Valentine",
     "description": "A quick witted woman who loves to go on thrilling adventures",
@@ -59,4 +59,4 @@
       "RainOfArrows"
     ]
   }
-]
+}
