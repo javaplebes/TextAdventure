@@ -1,0 +1,164 @@
+{
+  "displayName": "Vault of the Crying Legion",
+  "introText": "Welcome to the game!",
+  "outroText": "Thanks For playing!",
+  "map": [
+    {
+      "id": "StakePit",
+      "attributes": [
+        "trap"
+      ],
+      "displayName": "Stake Pit",
+      "description": "You remove the remains of the skeleton with your foot and take a step forward to see what’s in the cell. Without the time to react you fall into a pit of stakes!",
+      "interactables": [],
+      "items": [],
+      "enemies": [],
+      "exits": [
+        {
+          "direction": "South",
+          "destination": "Hall1"
+        }
+      ]
+    },
+    {
+      "id": "Hall1",
+      "attributes": [
+        "respawn"
+      ],
+      "displayName": "Hall 1",
+      "description": "You find yourself walking down a long corridor. You don't know what to expect, so proceed with caution. Cobwebs, the smell of rancid and the creak of the wood make the place look mournful.\n\nTo your left you see the neighboring cell, inside there’s a skeleton with it’s hand hovering through the bars.’It seems that this place is abandoned' you think.\n\nTo your right, you see an old but well decorated door with the following heading: 'Guard room of the Lord Roth's hosts'",
+      "interactables": [],
+      "items": [],
+      "enemies": [],
+      "exits": [
+        {
+          "direction": "West",
+          "destination": "DungeonCell"
+        },
+        {
+          "direction": "North",
+          "destination": "StakePit"
+        },
+        {
+          "direction": "East",
+          "destination": "Hall2"
+        },
+        {
+          "direction": "South",
+          "destination": "MechanicalsDoorRoom"
+        }
+      ]
+    },
+    {
+      "id": "DungeonCell",
+      "attributes": [
+        "start"
+      ],
+      "displayName": "Dungeon cell",
+      "description": "You wake up in a dirty and cold cell, your whole body hurts and you are covered in blood. You don't remember absolutely anything about what happened, you just know that you have to get out of there. The door hinges seem rotten and weak, a good push could end breaking them.\n\nWhen you get up, you realize that part of the ground is cracked and those cracks come together under a kind of abandoned statue lying on the ground",
+      "interactables": [],
+      "items": [],
+      "enemies": [],
+      "exits": [
+        {
+          "direction": "East",
+          "destination": "Hall1"
+        },
+        {
+          "direction": "South",
+          "destination": "MechanicalsDoorRoom"
+        }
+      ]
+    },
+    {
+      "id": "Hall2",
+      "attributes": [
+        "common"
+      ],
+      "displayName": "Hall 2",
+      "description": "You continue along the long corridor. The sound of something moving in the shadows distracts you from your thoughts",
+      "interactables": [],
+      "items": [],
+      "enemies": [
+        "GiantRat"
+      ],
+      "exits": [
+        {
+          "direction": "West",
+          "destination": "Hall1"
+        },
+        {
+          "direction": "East",
+          "destination": "Exit"
+        },
+        {
+          "direction": "South",
+          "destination": "GuardsRoom"
+        }
+      ]
+    },
+    {
+      "id": "Exit",
+      "attributes": [
+        "exit"
+      ],
+      "displayName": "Exit",
+      "description": "",
+      "interactables": [],
+      "items": [],
+      "enemies": [],
+      "exits": [
+        {
+          "direction": "West",
+          "destination": "Hall2"
+        }
+      ]
+    },
+    {
+      "id": "MechanicalsDoorRoom",
+      "attributes": [
+        "puzzle"
+      ],
+      "displayName": "Mechanical's door room",
+      "description": "You find a brief reception with a door at the back of the room. It’s a door full of gears and strange holes with indications in a language that you don't understand",
+      "interactables": [],
+      "items": [],
+      "enemies": [],
+      "exits": [
+        {
+          "direction": "West",
+          "destination": "DungeonCell"
+        },
+        {
+          "direction": "East",
+          "destination": "GuardsRoom"
+        },
+        {
+          "direction": "North",
+          "destination": "Hall1"
+        }
+      ]
+    },
+    {
+      "id": "GuardsRoom",
+      "attributes": [
+        "common"
+      ],
+      "displayName": "Guard's Room",
+      "description": "'This must be the room in which the guards rest from surveillance shifts' Maybe you can search the room for something of interest, that chest in the corner looks good",
+      "interactables": [],
+      "items": [],
+      "enemies": [],
+      "exits": [
+        {
+          "direction": "West",
+          "destination": "MechanicalsDoorRoom"
+        },
+        {
+          "direction": "North",
+          "destination": "Hall2"
+        }
+      ]
+    }
+  ]
+}

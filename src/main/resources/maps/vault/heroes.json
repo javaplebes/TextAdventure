@@ -1,0 +1,62 @@
+{
+  "FighterEren": {
+    "id": "FighterEren",
+    "displayName": "Eren",
+    "description": "A honest warrior from the eastern lands set out in search of the great treasure in hopes of saving his town from famine",
+    "classType": "Fighter",
+    "stats": {
+      "strength": 15,
+      "intelligence": 7,
+      "agility": 8,
+      "luck": 5
+    },
+    "items": [
+      "ShortSword",
+      "StoutShield"
+    ],
+    "skills": [
+      "SwiftStrike",
+      "WarCry"
+    ]
+  },
+  "MageHarry": {
+    "id": "MageHarry",
+    "displayName": "Harry",
+    "description": "A clever boy from the Wilburn Magic Academy in search of greater knowledge",
+    "classType": "WarMage",
+    "stats": {
+      "strength": 8,
+      "intelligence": 15,
+      "agility": 7,
+      "luck": 5
+    },
+    "items": [
+      "MagicWand",
+      "CloakOfWisdom"
+    ],
+    "skills": [
+      "FireBall",
+      "MeteorStrike"
+    ]
+  },
+  "HunterValentine": {
+    "id": "HunterValentine",
+    "displayName": "Valentine",
+    "description": "A quick witted woman who loves to go on thrilling adventures",
+    "classType": "Hunter",
+    "stats": {
+      "strength": 7,
+      "intelligence": 8,
+      "agility": 15,
+      "luck": 5
+    },
+    "items": [
+      "LongBow",
+      "PlateMail"
+    ],
+    "skills": [
+      "PowerShot",
+      "RainOfArrows"
+    ]
+  }
+}

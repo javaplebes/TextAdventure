@@ -1,0 +1,29 @@
+{
+  "Fighter": {
+    "id": "Fighter",
+    "statsBonus": {
+      "strength": 5
+    },
+    "buffs": [
+      "WarriorsMight"
+    ]
+  },
+  "WarMage": {
+    "id": "WarMage",
+    "statsBonus": {
+      "intelligence": 5
+    },
+    "buffs": [
+      "MagesWisdom"
+    ]
+  },
+  "Hunter": {
+    "id": "Hunter",
+    "statsBonus": {
+      "agility": 5
+    },
+    "buffs": [
+      "HuntersEye"
+    ]
+  }
+}
