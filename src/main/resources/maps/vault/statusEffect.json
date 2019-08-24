@@ -1,0 +1,23 @@
+{
+  "WarriorsMight": {
+    "stats": {
+      "strength": 2
+    }
+  },
+  "MagesWisdom": {
+    "stats": {
+      "intelligence": 10
+    }
+  },
+  "HuntersEye": {
+    "stats": {
+      "agility": 10
+    }
+  },
+  "MinorArmor": {
+    "armor": 2
+  },
+  "MinorPosion": {
+    "health": 20
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "ShortSword": {
+    "id": "ShortSword",
+    "attackDamage": 20
+  },
+  "StoutShield": {
+    "id": "StoutShield",
+    "health": 10,
+    "armor": 1
+  },
+  "MagicWand": {
+    "id": "MagicWand",
+    "attackDamage": 20
+  },
+  "CloakOfWisdom": {
+    "id": "CloakOfWisdom",
+    "magicalDamageReduction": 5
+  },
+  "LongBow": {
+    "id": "LongBow",
+    "attackDamage": 20
+  },
+  "PlateMail": {
+    "id": "PlateMail",
+    "armor": 2
+  }
+}
