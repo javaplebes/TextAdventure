@@ -1,4 +1,4 @@
-package com.textadventure.entity;
+package com.textadventure.entity.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import lombok.NonNull;
 @AllArgsConstructor
 @NoArgsConstructor
 public class BaseEntity{
-    @NonNull private String id;
-    private String displayName;
-    private String description;
+    @NonNull protected String id;
+    protected String displayName;
+    protected String description;
 }

@@ -1,4 +1,4 @@
-package com.textadventure.entity;
+package com.textadventure.entity.models;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

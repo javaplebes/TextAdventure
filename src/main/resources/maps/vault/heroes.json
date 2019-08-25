@@ -10,7 +10,7 @@
       "agility": 8,
       "luck": 5
     },
-    "items": [
+    "inventory": [
       "ShortSword",
       "StoutShield"
     ],
@@ -30,7 +30,7 @@
       "agility": 7,
       "luck": 5
     },
-    "items": [
+    "inventory": [
       "MagicWand",
       "CloakOfWisdom"
     ],
@@ -50,7 +50,7 @@
       "agility": 15,
       "luck": 5
     },
-    "items": [
+    "inventory": [
       "LongBow",
       "PlateMail"
     ],

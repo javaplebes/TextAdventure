@@ -1,27 +1,39 @@
 {
   "ShortSword": {
     "id": "ShortSword",
+    "displayName": "Short Sword",
     "attackDamage": 20
   },
   "StoutShield": {
     "id": "StoutShield",
-    "health": 10,
-    "armor": 1
+    "displayName": "Stout Shield",
+    "stats": {
+      "health": 10,
+      "armor": 1
+    }
   },
   "MagicWand": {
     "id": "MagicWand",
+    "displayName": "Magic Wand",
     "attackDamage": 20
   },
   "CloakOfWisdom": {
     "id": "CloakOfWisdom",
-    "magicalDamageReduction": 5
+    "displayName": "Cloak Of Wisdom",
+    "stats": {
+      "aura": 5
+    }
   },
   "LongBow": {
     "id": "LongBow",
+    "displayName": "Long Bow",
     "attackDamage": 20
   },
   "PlateMail": {
     "id": "PlateMail",
-    "armor": 2
+    "displayName": "Plate Mail",
+    "stats": {
+      "armor": 2
+    }
   }
 }

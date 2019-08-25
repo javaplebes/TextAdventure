@@ -2,7 +2,7 @@
   "displayName": "Vault of the Crying Legion",
   "introText": "Welcome to the game!",
   "outroText": "Thanks For playing!",
-  "map": [
+  "rooms": [
     {
       "id": "StakePit",
       "attributes": [

@@ -1,23 +1,32 @@
 {
   "WarriorsMight": {
+    "id": "WarriorsMight",
     "stats": {
       "strength": 2
     }
   },
   "MagesWisdom": {
+    "id": "MagesWisdom",
     "stats": {
       "intelligence": 10
     }
   },
   "HuntersEye": {
+    "id": "HuntersEye",
     "stats": {
       "agility": 10
     }
   },
   "MinorArmor": {
-    "armor": 2
+    "id": "MinorArmor",
+    "stats": {
+      "armor": 2
+    }
   },
   "MinorPosion": {
-    "health": 20
+    "id": "MinorPosion",
+    "stats": {
+      "health": 20
+    }
   }
 }
