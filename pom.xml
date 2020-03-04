@@ -20,7 +20,7 @@
         <!-- Dependency versions -->
         <slf4j.version>1.7.26</slf4j.version>
         <log4j.version>2.12.0</log4j.version>
-        <jackson.version>2.9.9.3</jackson.version>
+        <jackson.version>2.9.10.3</jackson.version>
         <lombok.version>1.18.8</lombok.version>
 
         <junit.version>5.5.1</junit.version>
